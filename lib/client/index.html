@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Log.io</title>
+
 <link rel="stylesheet" type="text/css" href="css/web_client.css"/>
 <link rel="stylesheet" type="text/css" href="css/colors.css"/>
 
@@ -23,80 +24,78 @@
 </head>
 <body>
 <div id="container">
+
 <div id="controls">
-<div id="controls2">
-
-</div>
+	<div id="controls2"></div>
 </div><!-- #controls -->
+
 <div id="right">
-<div id="screens">
-</div>
-
-<div id="bottom">
-<div id="bottom2">
-<div id="stats">
-<div class="stat nodes"><b>0</b> nodes</div>
-<div class="stat log_files"><b>0</b> log files</div>
-<div class="stat messages"><b>0</b> messages</div>
-<div class="stat elapsed"><b>0:00</b> elapsed</div>
-<div class="stat rate"><b>0.00</b> messages/sec</div>
-</div>
-<div class="add-buttons">
-<div class="add-button" id="add-stream-button">+ Stream</div>
-<div class="add-button" id="add-history-button">+ History</div>
-</div>
-</div>
-</div><!-- #bottom -->
-
+	<div id="screens"></div>
+	<div id="bottom">
+		<div id="bottom2">
+			<div id="stats">
+				<div class="stat nodes"><b>0</b> nodes</div>
+				<div class="stat log_files"><b>0</b> log files</div>
+				<div class="stat messages"><b>0</b> messages</div>
+				<div class="stat elapsed"><b>0:00</b> elapsed</div>
+				<div class="stat rate"><b>0.00</b> messages/sec</div>
+			</div>
+			<div class="add-buttons">
+				<div class="add-button" id="add-stream-button">+ Stream</div>
+				<div class="add-button" id="add-history-button">+ History</div>
+			</div>
+		</div>
+	</div><!-- #bottom -->
 </div>
 
 <div id="templates">
 
-<div class="group" id="node_template">
-<div class="group2">
-<div class="node">
-</div>
-</div>
-</div><!-- #node_template -->
+	<div class="group" id="node_template">
+		<div class="group2">
+			<div class="node"></div>
+		</div>
+	</div><!-- #node_template -->
 
-<div class="log_file" id="log_file_template">
-<div class="status"></div>
-<div class="label"></div>
-<div class="screens">
-</div>
-</div><!-- #log_file_template -->
+	<div class="log_file" id="log_file_template">
+		<div class="status"></div>
+		<div class="label"></div>
+		<div class="screens"></div>
+	</div><!-- #log_file_template -->
 
-<div class="screen stream" id="stream_template">
-<div class="bar">
-<span class="screen-label"></span>
+	<div class="screen stream" id="stream_template">
+		<div class="bar">
+			<span class="screen-label"></span>
+			<div class="bar-top-right">
+				<div class="screen-buttons">
+					<a class="button close" href="#"><img src="/images/icons/cross.png" title="Close Screen"/></a>
+					<a class="button clear" href="#"><img src="/images/icons/bin.png" title="Clear Screen"/></a>
+					<a class="button pause" href="#"><img src="/images/icons/control_pause.png" title="Pause Stream"/></a>
+					<a class="button start" href="#"><img src="/images/icons/control_play.png" title="Start Stream"/></a>
+				</div>
+				<div class="screen-search">
+					<a href="#" class="result-count"></a>
+					<input type="text" class="inactive" name="search" title="Regex Search" value="Regex Search"/>
+				</div>
+			</div>
+		</div>
+		<div class="console"></div>
+	</div><!-- #stream_template -->
 
-<div class="bar-top-right">
-<div class="screen-buttons">
-<a class="button close" href="#"><img src="/images/icons/cross.png" title="Close Screen"/></a>
-<a class="button clear" href="#"><img src="/images/icons/bin.png" title="Clear Screen"/></a>
-<a class="button pause" href="#"><img src="/images/icons/control_pause.png" title="Pause Stream"/></a>
-<a class="button start" href="#"><img src="/images/icons/control_play.png" title="Start Stream"/></a>
-</div>
-<div class="screen-search"><a href="#" class="result-count"></a><input type="text" class="inactive" name="search" title="Regex Search" value="Regex Search"/></div>
-</div>
-</div>
-<div class="console">
-</div>
-</div><!-- #stream_template -->
-
-<div class="screen history" id="history_template">
-<div class="bar">
-<span class="screen-label"></span>
-<div class="bar-top-right">
-<div class="screen-buttons">
-<a class="button close" href="#"><img src="/images/icons/cross.png" title="Close Screen"/></a>
-</div>
-<div class="screen-search"><a href="#" class="result-count"></a><input type="text" class="inactive" name="search" title="Regex Search" value="Regex Search"/></div>
-</div>
-</div>
-<div class="console">
-</div>
-</div><!-- #history_template -->
+	<div class="screen history" id="history_template">
+		<div class="bar">
+			<span class="screen-label"></span>
+			<div class="bar-top-right">
+				<div class="screen-buttons">
+					<a class="button close" href="#"><img src="/images/icons/cross.png" title="Close Screen"/></a>
+				</div>
+				<div class="screen-search">
+					<a href="#" class="result-count"></a>
+					<input type="text" class="inactive" name="search" title="Regex Search" value="Regex Search"/>
+				</div>
+			</div>
+		</div>
+		<div class="console"></div>
+	</div><!-- #history_template -->
 
 </div><!-- #templates -->
 
